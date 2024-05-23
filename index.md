@@ -3,17 +3,19 @@ marp: true
 lang: de-DE
 title: DeFi Kurs
 description: Einführung in Decentralized Finance (DeFi)
-theme: uncover
+theme: minimal
 transition: fade
 paginate: true
 _paginate: false
 ---
 
+<!-- _class: lead -->
+
 ![bg opacity](./assets/gradient.jpg)
 
 # <!--fit--> Decentralized Finance (DeFi)
 
-Weiterbildungskurs
+## Weiterbildungskurs
 
 https://github.com/nbundi/defi-kurs
 
@@ -29,7 +31,7 @@ https://github.com/nbundi/defi-kurs
 | Block              | Folien |
 | :----------------- | :----- |
 | 1. Einführung in DeFi | [link](./defi-einfuehrung.md) |
-| 2. Kryptoassets und Tokenisierung | [link](./defi-assets.md) |
+| 2. Kryptoassets und Wallets | [link](./defi-assets.md) |
 | 3. Custody und Wallets | [link](./defi-wallets.md) |
 | 4. Lending und Borrowing | [link](./defi-lending.md) |
 | 5. Infrastruktur | [link](./defi-infrastruktur.md) |

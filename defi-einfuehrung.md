@@ -7,7 +7,7 @@ theme: minimal
 transition: fade
 paginate: true
 _paginate: false
-footer: 'DeFi Wissen'
+footer: ""
 ---
 
 <!-- _class: lead -->
@@ -16,18 +16,33 @@ footer: 'DeFi Wissen'
 
 # <!--fit--> Einführung in DeFi
 
-Weiterbildungskurs - Teil 1
+## Weiterbildungskurs
 
-https://github.com/nbundi/defi-kurs
+### Dr. Nils Bundi
 
 
 <!-- This is presenter note. You can write down notes through HTML comment. -->
 
 ---
 
+<style scoped>{font-size: 37px}</style>
+
+![bg right 60%](./assets/nils-profile.jpeg)
+
+**Dr. Nils Bundi**
+
+DeFi F&E seit 2018 
+Gründer [Vesu Lending](https://vesu.xyz)
+Präsident [DeFi Collective](https://deficollective.org)
+Dozent [ZHAW School of Engineering](https://zhaw.ch)
+
+---
+
 # DeFi ist hier
 
-![center width:](./assets/forbes-defi-will-change-finance.png)
+![center width:500](./assets/forbes-defi-will-change-finance.png)
+
+![center width:500](./assets/FT-blackrock-buidl.png)
 
 ![bg 70% right](./assets/defi-is-here-meme.png)
 
@@ -35,11 +50,12 @@ https://github.com/nbundi/defi-kurs
 
 # Uniswap DEX
 
-* https://app.uniswap.org
-* Trading von Kryptoassets
-* Keine Finanzintermediäre (wie Handel, Clearing, Settlement, Custody)
-* Global zugänglich für alle
-* 365/7/24 in Betrieb
+- Trading von Kryptoassets ($2.8b 24h Volume)
+- Keine Finanzintermediäre (wie Handel, Clearing, Settlement, Custody)
+- Global zugänglich für alle
+- 365/7/24 in Betrieb
+- Volle Transparenz
+- https://app.uniswap.org
 
 ![bg 110% right](./assets/uniswap-app.png)
 
@@ -49,14 +65,15 @@ https://github.com/nbundi/defi-kurs
 
 > [...] Gemeinsam ist DeFi-Projekten insbesondere, dass sie __zugangsoffene Blockchain-Infrastrukturen__ wie Ethereum oder Solana verwenden, um __Finanztransaktionen__ weitestgehend automatisiert und __ohne Beteiligung traditioneller Finanzintermediäre__ abzuwickeln. [...] Die Nutzung steht in der Regel allen offen.
 
-_Quelle: [FINMA](https://www.finma.ch/de/dokumentation/dossier/dossier-fintech/decentralized-finance-defi-2022/)_
+<!-- footer: '_Quelle: [FINMA](https://www.finma.ch/de/dokumentation/dossier/dossier-fintech/decentralized-finance-defi-2022/)_' -->
 
 ---
 
-# Was ist DeFi? (cont.)
+# Wie funktioniert DeFi?
 
-![center width:700pt](./assets/tradfi-vs-defi-infra.png)
-_Source: [NASDAQ](https://www.nasdaq.com/articles/defi%3A-the-basics)_
+![center width:800pt](./assets/tradfi-vs-defi-infra.png)
+
+<!-- footer: '_Source: [NASDAQ](https://www.nasdaq.com/articles/defi%3A-the-basics)_' -->
 
 ---
 
@@ -67,8 +84,9 @@ _Source: [NASDAQ](https://www.nasdaq.com/articles/defi%3A-the-basics)_
 - Daten und Funktionen sind unter einer bestimmten Blockchain Adresse "abrufbar"
 - Benutzer übermitteln "Transaktionen" auf der Blockchain, um mit den Funktionen des Smart Contract's zu interagieren
 - Integrität (Daten und Funktionen) ist über die Blockchain gewahrt
-- Ethereum Demo: [Etherscan](https://etherscan.io), [Ethviewer](http://ethviewer.live/)
+- Volle Transparenz [Etherscan](https://etherscan.io), [Ethviewer](http://ethviewer.live/)
 
+<!-- footer: "" -->
 
 ---
 
@@ -112,20 +130,22 @@ td {
 # DeFi Markt
 
 <br>
+<br>
 
 | __3110__ Projekte    | __$192b__ TVL       |
 | -------------------- | ------------------- |
 | __$30b__ Volume (7d) | __$160m__ Fees (7d) |
 
 
-_Quelle: [Defillama](https://defillama.com)  (May 2024)_
+<!-- footer: '_Quelle: [Defillama](https://defillama.com)  (May 2024)_' -->
 
 ---
 
-# DeFi Markt (cont.)
+# DeFi Markt im Vergleich
 
 ![center width:900pt](./assets/defi-vs-tradfi-market.png)
-_Source: [Cointelegraph](https://cointelegraph.com/news/defi-can-be-100-times-larger-than-today-in-5-years) (2021)_
+
+<!-- footer: '_Quelle: [Cointelegraph](https://cointelegraph.com/news/defi-can-be-100-times-larger-than-today-in-5-years) (2021)_' -->
 
 ---
 
@@ -133,12 +153,15 @@ _Source: [Cointelegraph](https://cointelegraph.com/news/defi-can-be-100-times-la
 
 ![center width:900pt](./assets/defi-history.png)
 
+<!-- footer: "" -->
+
 ---
 
-# DeFi Ökosystem
+# DeFi Ökosystem (nach TVL)
 
-![center width:700pt](./assets/defi-ecosystem-map.png)
-_Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map)_
+![bg center 80%](./assets/defi-ecosystem-map.png)
+
+<!-- footer: '_Quelle: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map)_' -->
 
 ---
 
@@ -146,7 +169,7 @@ _Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map
 
 # Differenzierung
 
-|                     | TradFi              | DeFi              |
+|                     | Traditional Finance | DeFi              |
 | ------------------- | ------------------- | ----------------- |
 | Custody          | Service Provider  | Nutzer                |
 | Unit of account  | Fiat Währung      | Kryptocurrency      |
@@ -156,39 +179,36 @@ _Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map
 | Governance       | Service Provider  | Keine oder Community |  
 | Auditierbarkeit  | Autorisierte Service Provider | Öffentlich |
 
+<!-- footer: "" -->
+
 ---
 
 # Vorteile
 
-- hello
+- Settlement: von 3d zu <1h
+- Transaktionskosten: sub-Cent für internationale Zahlung
+- Effizienz und Automation: 24/7/365
+- Innovation: neue Geschäftsmodelle, Finanz-primitive (flash loans), etc
 
 ![bg 90% right](./assets/defi-opportunities.png)
-_Source: [Deloite](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/risk/us-financial-advisory-defi-march-2022.pdf)_
+
+<!-- footer: '_Quelle: [Deloite](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/risk/us-financial-advisory-defi-march-2022.pdf)_' -->
 
 ---
 
 # Risiken
 
-- hello
+- Technologie: immer noch relativ jung
+- Security: Phishing, Fraud, DNS hijacking, etc
+- Legal: unsicherheit bzgl Regulation auch als Nutzer
+- Markt, Liquidität, Gegenpartei
 
 ![bg 80% left](./assets/defi-challenges.png)
-_Source: [Deloite](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/risk/us-financial-advisory-defi-march-2022.pdf)_
 
----
-
-# DeFi Stack
-
-![center width:600pt](./assets/defi-stack.png)
-_Source: [Deloite](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/risk/us-financial-advisory-defi-march-2022.pdf) nach [Schär](https://doi.org/10.20955/r.103.153-74)_
+<!-- footer: "" -->
 
 ---
 
 ![bg center 70%](./assets/we-must-go-deeper-meme.jpg)
 
----
-
-# Links
-
-- [Defillama](https://defillama.com)
-- [Messari DeFi Screener](https://messari.io/screener/screen/defi-assets-d8ww)
-- [Brief History of DeFi](https://blog.makerdao.com/a-brief-history-of-decentralized-finance-defi/) (MakerDAO blog)
+<!-- footer: "" -->

@@ -7,7 +7,7 @@ theme: minimal
 transition: fade
 paginate: true
 _paginate: false
-footer: 'DeFi Wissen by Nils Bundi'
+footer: ""
 ---
 
 <!-- _class: lead -->
@@ -16,9 +16,9 @@ footer: 'DeFi Wissen by Nils Bundi'
 
 # <!--fit--> Lending und Borrowing
 
-Weiterbildungskurs - Teil 4
+## Weiterbildungskurs
 
-https://github.com/nbundi/defi-kurs
+### Dr. Nils Bundi
 
 
 <!-- This is presenter note. You can write down notes through HTML comment. -->
@@ -61,17 +61,27 @@ _Quelle: [Appinventiv](https://appinventiv.com/blog/how-defi-lending-works/)_
 
 ---
 
-# TVL in DeFi Lending
+# Aave Lending Märkte
 
-![left width:1150](./assets/defi-lending-tvl.png)
-_Quelle: [Defillama](https://defillama.com/categories) (Mai 2024)_
+![center width:1100](./assets/aave-markets.png)
+
+<!-- footer: '_Quelle: [Aave](https://app-aave-com.ipns.dweb.link) (Mai 2024)_' -->
 
 ---
 
-# Relevanz DeFi Lending Sektor
+# TVL in DeFi Lending
 
-![center width:700pt](./assets/defi-ecosystem-map.png)
-_Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map)_
+![left width:1150](./assets/defi-lending-tvl.png)
+
+<!-- footer: '_Quelle: [Defillama](https://defillama.com/categories) (Mai 2024)_' -->
+
+---
+
+# Zweitgrösster DeFi Sektor
+
+![center width:750pt](./assets/defi-ecosystem-map.png)
+
+<!-- footer: '_Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map)_' -->
 
 ---
 
@@ -84,6 +94,8 @@ _Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map
 | Besicherung   | >100% mittels Kryptoassets | Nein | 
 | Liquidation   | On-chain | Auf Gerichtsweg |
 
+<!-- footer: "" -->
+
 ---
 
 # Lending Platform Modelle (cont.)
@@ -91,17 +103,18 @@ _Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map
 |    |  Peer-to-peer  | Peer-to-pool  |
 | -- | --------------------- | ------------------ |
 | Gegenpartei | Borrower | Pool |
-| Liquidität   | Fragmentiert | Pooled |
+| Liquidität   | Fragmentiert (nach individuellen Terms) | Pooled ( die gleichen terms für Teilnehmer) |
 | Besicherung | Ja / Nein | Ja / Nein |
-| Maturität | Fixed | Variabel |
-| Zins | Fixed | Variabel |
+| Maturität | Fixed (pro Loan) | Variabel |
+| Zins | Fixed (pro Loan) | Variabel |
 
 ---
 
 # Liquidationen
 
-![center width:650](./assets/defi-liquidations.png)
-_Quelle: [Etherscan](https://info.etherscan.com/explanation-on-defi-liquidation/)_
+![center width:800](./assets/defi-liquidations.png)
+
+<!-- footer: '_Quelle: [Etherscan](https://info.etherscan.com/explanation-on-defi-liquidation/)_' -->
 
 ---
 
@@ -119,6 +132,8 @@ $$
 LTV \geq MaxLTV \rightarrow \text{liquidieren}
 $$
 
+<!-- footer: "" -->
+
 ---
 
 # Liquidatoren
@@ -129,35 +144,40 @@ $$
 - Verschiedene Modelle (folgende Folie)
 
 ![bg right 100%](./assets/defi-liquidators.png)
-_Quelle: [Qin et al](https://dl.acm.org/doi/10.1145/3487552.3487811)_
+
+<!-- footer: '_Quelle: [Qin et al](https://dl.acm.org/doi/10.1145/3487552.3487811)_' -->
 
 ---
 
 # Preis Oracles
 
 ![center width:1200](./assets/chainlink-oracles.png)
-_Quelle: [Chainlink](https://chain.link/use-cases/defi)_
+
+<!-- footer: '_Quelle: [Chainlink](https://chain.link/use-cases/defi)_' -->
 
 ---
 
 # Liquidations-Modelle
 
-![center width:800](./assets/defi-liquidation-models.png)
-_Quelle: [Delphi Digital](https://members.delphidigital.io/reports/breaking-down-the-design-space-of-money-market-liquidations)_
+![center width:900](./assets/defi-liquidation-models.png)
+
+<!-- footer: '_Quelle: [Delphi Digital](https://members.delphidigital.io/reports/breaking-down-the-design-space-of-money-market-liquidations)_' -->
 
 ---
 
-# Liquidationen auf Aave (v2)
+# Liquidationen auf Aave
 
-![center width:550](./assets/aave-liquidations.png)
-_Quelle: [Block Analitica](https://aave.blockanalitica.com) (Mai 2024)_
+![center width:650](./assets/aave-liquidations.png)
+
+<!-- footer: '_Quelle: [Block Analitica](https://aave.blockanalitica.com) (Mai 2024)_' -->
 
 ---
 
 # Flash Loans
 
-![center width:1100](./assets/flash-loans.png)
-_Quelle: [LearnWeb3](https://learnweb3.io/lessons/borrow-millions-without-collateral-from-aave-using-flash-loans/)_
+![center width:1200](./assets/flash-loans.png)
+
+<!-- footer: '_Quelle: [LearnWeb3](https://learnweb3.io/lessons/borrow-millions-without-collateral-from-aave-using-flash-loans/)_' -->
 
 ---
 
@@ -169,15 +189,12 @@ _Quelle: [LearnWeb3](https://learnweb3.io/lessons/borrow-millions-without-collat
 - Position Management (e.g. Collateral Swap)
 - UX
 
+<!-- footer: "" -->
+
 ---
 
 # Top Lending Platformen
 
-![center width:1000](./assets/lending-tvl-rankings.png)
-_Quelle: [Defillama](https://defillama.com) (Mai 2024)_
+![center width:1100](./assets/lending-tvl-rankings.png)
 
----
-
-# Beispiel [Aave](https://app-aave-com.ipns.dweb.link)
-
-![center width:1100](./assets/aave-markets.png)
+<!-- footer: '_Quelle: [Defillama](https://defillama.com) (Mai 2024)_' -->
