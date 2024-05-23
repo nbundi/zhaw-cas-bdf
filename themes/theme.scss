@@ -1,0 +1,48 @@
+/* @theme minimal */
+
+@import 'gaia';
+
+:root{
+    --color-background: white !important;
+    --color-background-stripe: white !important;
+    --color-foreground: black !important;
+    --color-dimmed: grey !important;
+    --color-highlight: blue !important;
+}
+
+section { table {
+  th,
+  td {
+    border-color: var(--color-foreground);
+  }
+
+  thead th {
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  tbody > tr:nth-child(odd) {
+    td,
+    th {
+      background: var(--color-background-stripe, transparent);
+    }
+  }
+}
+}
+
+/* the "center" keyword centers the image - may break, careful */
+/* https://github.com/marp-team/marpit/issues/141#issuecomment-473204518 */
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+img[alt~="right"] {
+  display: block;
+  margin-left: 0 auto;
+}
+
+img[alt~="left"] {
+  display: block;
+  margin-right: 0 auto;
+}
