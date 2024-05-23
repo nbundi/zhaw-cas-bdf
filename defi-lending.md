@@ -16,7 +16,7 @@ footer: ""
 
 # <!--fit--> Lending und Borrowing
 
-## Weiterbildungskurs
+## Weiterbildungskurs DeFi
 
 ### Dr. Nils Bundi
 
@@ -25,13 +25,13 @@ footer: ""
 
 ---
 
-# DeFi Lending
+# DeFi Lending Übersicht
 
 ![center width:1000](./assets/defi-lending.png)
 
 ---
 
-# DeFi Lending (cont.)
+# DeFi Lending Eigenschaften
 
 - __Blockchain:__ Umsetzung mittels Smart Contracts und Blockchain
 - __Peer-to-peer:__ Kein traditioneller Intermediär

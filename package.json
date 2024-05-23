@@ -9,7 +9,9 @@
     "deck": "marp --no-stdin index.md -o public/index.html && ncp assets public/assets",
     "og-image": "marp --no-stdin index.md -o public/og-image.jpg",
     "start": "marp -ps .",
-    "vercel-build": "yum install nss mesa-libgbm -y && MARP_USER=root CHROME_PATH=$(npx -y @puppeteer/browsers@latest install chrome@stable --path $(realpath ./tmp) | awk '{print $2}') npm run build"
+    "vercel-build": "yum install nss mesa-libgbm -y && MARP_USER=root CHROME_PATH=$(npx -y @puppeteer/browsers@latest install chrome@stable --path $(realpath ./tmp) | awk '{print $2}') npm run build",
+    "deck-einf": "marp --no-stdin defi-einfuehrung.md -o public/index.html && ncp assets public/assets"
+    
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^3.4.0",

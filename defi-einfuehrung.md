@@ -16,7 +16,7 @@ footer: ""
 
 # <!--fit--> Einführung in DeFi
 
-## Weiterbildungskurs
+## Weiterbildungskurs DeFi
 
 ### Dr. Nils Bundi
 
@@ -24,6 +24,8 @@ footer: ""
 <!-- This is presenter note. You can write down notes through HTML comment. -->
 
 ---
+
+<!-- _class: lead -->
 
 <style scoped>{font-size: 37px}</style>
 
@@ -95,7 +97,7 @@ Dozent [ZHAW School of Engineering](https://zhaw.ch)
 - Smart Contracts sind nicht "smarter" als andere Computerprogramme
 - Falls vorgesehen, können Daten und Logik eines Smart Contract's geändert werden
 
-![bg right 90%](./assets/bitcoin-can-be-changed-meme.jpg)
+![bg right 80%](./assets/bitcoin-can-be-changed-meme.jpg)
 
 ---
 
@@ -151,7 +153,7 @@ td {
 
 # DeFi Geschichte
 
-![center width:900pt](./assets/defi-history.png)
+![center width:1200](./assets/defi-history.png)
 
 <!-- footer: "" -->
 
@@ -159,7 +161,7 @@ td {
 
 # DeFi Ökosystem (nach TVL)
 
-![bg center 80%](./assets/defi-ecosystem-map.png)
+![center width:1000](./assets/defi-ecosystem-map.png)
 
 <!-- footer: '_Quelle: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map)_' -->
 
@@ -174,7 +176,7 @@ td {
 | Custody          | Service Provider  | Nutzer                |
 | Unit of account  | Fiat Währung      | Kryptocurrency      |
 | Execution        | Service Provider  | Smart Contract  |
-| Settlement       | 3-5 business days | Sekunden bis Minuten (365/7/25) |
+| Settlement       | 3-5 business days | Sekunden bis Minuten (365/7/24) |
 | Clearing         | Clearinghouse     | Blockchain      | 
 | Governance       | Service Provider  | Keine oder Community |  
 | Auditierbarkeit  | Autorisierte Service Provider | Öffentlich |
@@ -187,7 +189,7 @@ td {
 
 - Settlement: von 3d zu <1h
 - Transaktionskosten: sub-Cent für internationale Zahlung
-- Effizienz und Automation: 24/7/365
+- Effizienz und Automation: 365/7/24
 - Innovation: neue Geschäftsmodelle, Finanz-primitive (flash loans), etc
 
 ![bg 90% right](./assets/defi-opportunities.png)
@@ -207,8 +209,16 @@ td {
 
 <!-- footer: "" -->
 
+--- 
+
+# DeFi Stack
+
+![center width:700](./assets/defi-stack.png)
+
+<!-- footer: '_Quelle: [Deloite](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/risk/us-financial-advisory-defi-march-2022.pdf) nach [Schär](https://doi.org/10.20955/r.103.153-74)_' -->
+
 ---
 
-![bg center 70%](./assets/we-must-go-deeper-meme.jpg)
+![bg center 60%](./assets/we-must-go-deeper-meme.jpg)
 
 <!-- footer: "" -->

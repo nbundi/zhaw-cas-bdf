@@ -16,7 +16,7 @@ footer: ""
 
 # <!--fit--> Infrastruktur und Services
 
-## Weiterbildungskurs
+## Weiterbildungskurs DeFi
 
 ### Dr. Nils Bundi
 
@@ -25,7 +25,7 @@ footer: ""
 
 ---
 
-# DeFi Infrastruktur
+# DeFi Infrastruktur Übersicht
 
 ![center width:550](./assets/defi-infrastructure.png)
 
@@ -113,7 +113,7 @@ footer: ""
 
 # <!--fit--> DeFi Regulation
 
-## Weiterbildungskurs
+## Weiterbildungskurs DeFi
 
 ### Dr. Nils Bundi
 

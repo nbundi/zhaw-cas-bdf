@@ -16,7 +16,7 @@ footer: ""
 
 # <!--fit--> Kryptoassets und Wallets
 
-## Weiterbildungskurs
+## Weiterbildungskurs DeFi
 
 ### Dr. Nils Bundi
 
