@@ -1,8 +1,8 @@
 ---
 marp: true
-lang: de-DE
-title: DeFi Kurs - Einführung in DeFi
-description: Einführung in Decentralized Finance (DeFi)
+lang: en-EN
+title: DeFi Lending Primer
+description: Introduction to DeFi Lending
 theme: minimal
 transition: fade
 paginate: true
@@ -14,10 +14,10 @@ footer: ""
 
 ![bg opacity](./assets/gradient.jpg)
 
-# <!--fit--> Lending und Borrowing
+# <!--fit--> DeFi Lending - An Introduction
 
-## Weiterbildungskurs DeFi
-
+## DeFi Talents Guest Lecture
+### 4. November 2024
 ### Dr. Nils Bundi
 
 
@@ -25,47 +25,31 @@ footer: ""
 
 ---
 
-# DeFi Lending Übersicht
+<style scoped>{font-size: 36px}</style>
 
-![center width:1000](./assets/defi-lending.png)
+![bg right 60%](./assets/nils-profile.jpeg)
 
----
+### Dr. Nils Bundi
 
-# DeFi Lending Eigenschaften
+<br>
+<br>
 
-- __Blockchain:__ Umsetzung mittels Smart Contracts und Blockchain
-- __Peer-to-peer:__ Kein traditioneller Intermediär
-- __Global:__ Mittels öffentlicher Blockchain
-- __Anonym:__ Grundsätzlich keine Information zur Gegenpartei, somit Prüfung von Kreditwürdigkeit der Gegenpartei nicht möglich
-- __Besicherung__ (Collateral): Anstelle von Kreditprüfung, >100% Besicherung durch Kryptoasset
-- __Liquidation:__ Teil des Lending Protokolls, Gerichtsweg nicht möglich (da anonym und global)
+![width:50](https://pbs.twimg.com/profile_images/1759540896167575552/uUA9O7Cm_400x400.png) Founder [Vesu Lending](https://vesu.xyz)
+![width:50](https://pbs.twimg.com/profile_images/1684551593360777216/Qi3r9wXZ_400x400.jpg) President [DeFi Collective](https://deficollective.org)
+![width:50](https://pbs.twimg.com/profile_images/1511627796937912322/U-1sR-eY_400x400.jpg) Lecturer [ZHAW School of Engineering](https://zhaw.ch)
 
 ---
 
-# DeFi vs. Traditional Lending
+# What if?
 
-![center width:800](./assets/tradfi-vs-defi-lending.png)
-_Quelle: [Appinventiv](https://appinventiv.com/blog/how-defi-lending-works/)_
+- I could earn on my crypto
+- I could borrow crypto
+- Directly from my wallet
+- Only requiring an internet connection
+- __Anonymously__
+- __Globally__
 
----
-
-# Wieso Lending?
-
-- Liquidität auf Kryptoasset
-- Levered Exposure auf Kryptoasset (e.g. BTC, ETH, etc.)
-- Levered Exposure auf Yield (e.g. ETH Staking) 
-- Short Kryptoasset (e.g. Stablecoin depeg event)
-- Airdrop "Farming"
-- Finanzierung von Arbitrage und MEV Strategien
-- etc.
-
----
-
-# Aave Lending Märkte
-
-![center width:1100](./assets/aave-markets.png)
-
-<!-- footer: '_Quelle: [Aave](https://app-aave-com.ipns.dweb.link) (Mai 2024)_' -->
+![bg right 60%](./assets/defi-lending-2.png)
 
 ---
 
@@ -73,11 +57,11 @@ _Quelle: [Appinventiv](https://appinventiv.com/blog/how-defi-lending-works/)_
 
 ![left width:1150](./assets/defi-lending-tvl.png)
 
-<!-- footer: '_Quelle: [Defillama](https://defillama.com/categories) (Mai 2024)_' -->
+<!-- footer: '_Source: [Defillama](https://defillama.com/categories)_' -->
 
 ---
 
-# Zweitgrösster DeFi Sektor
+# One of the largest DeFi sektors
 
 ![center width:750pt](./assets/defi-ecosystem-map.png)
 
@@ -85,116 +69,142 @@ _Quelle: [Appinventiv](https://appinventiv.com/blog/how-defi-lending-works/)_
 
 ---
 
-# Lending Platform Modelle
+# But, how?
 
-|    |  Over-Collateralized  | Un-Collateralized  |
-| -- | --------------------- | ------------------ |
-| Anonym        | Ja   | Nein (Borrower) |
-| Kreditprüfung | Nein | Ja, durch _Pool Manager_ |
-| Besicherung   | >100% mittels Kryptoassets | Nein | 
-| Liquidation   | On-chain | Auf Gerichtsweg |
+![center width:950](./assets/defi-lending-how.png)
 
 <!-- footer: "" -->
 
 ---
 
-# Lending Platform Modelle (cont.)
+# Position health
 
-|    |  Peer-to-peer  | Peer-to-pool  |
-| -- | --------------------- | ------------------ |
-| Gegenpartei | Borrower | Pool |
-| Liquidität   | Fragmentiert (nach individuellen Terms) | Pooled ( die gleichen terms für Teilnehmer) |
-| Besicherung | Ja / Nein | Ja / Nein |
-| Maturität | Fixed (pro Loan) | Variabel |
-| Zins | Fixed (pro Loan) | Variabel |
-
----
-
-# Liquidationen
-
-![center width:800](./assets/defi-liquidations.png)
-
-<!-- footer: '_Quelle: [Etherscan](https://info.etherscan.com/explanation-on-defi-liquidation/)_' -->
-
----
-
-# Loan-to-Value Ratio
-
-Das _Loan-to-Value Ratio_ (LTV) ist ein zentraler Faktor, der die _Solvenz_ einer Schuld-Position auf einer Lending Platform abbildet:
+__Loan-to-value__ (LTV) measures value of debt vs collateral
 
 $$
-LTV = \frac{\text{Wert der Schuld}}{\text{Wert der Besicherung}}
+LTV = \frac{\text{Value of Debt}}{\text{Value of Collateral}}
 $$
 
-Position kann liquidiert werden, sobald eine definierte Grenze, das $MaxLTV$, überschritten wird:
+__Health factor__ (HF) measures liquidation risk
 
 $$
-LTV \geq MaxLTV \rightarrow \text{liquidieren}
+HF = \frac{\text{LiquidationLTV}}{\text{LTV}}
 $$
+
+__Liquidate__ position if HF<1!
 
 <!-- footer: "" -->
 
 ---
 
-# Liquidatoren
+# Liquidations
 
-- Grundsätzlich offen (jeder kann liquidieren)
-- Liquidator macht Profit
-- Sehr kompetitiver Markt dominiert durch MEV-bots
-- Verschiedene Modelle (folgende Folie)
-
-![bg right 100%](./assets/defi-liquidators.png)
-
-<!-- footer: '_Quelle: [Qin et al](https://dl.acm.org/doi/10.1145/3487552.3487811)_' -->
+![center width:1100](./assets/defi-liquidation-steps.png)
 
 ---
 
-# Preis Oracles
+# In practice
 
-![center width:1200](./assets/chainlink-oracles.png)
+![width:550](./assets/arkham-liquidation-tweet.png)
+![width:550](./assets/lemiscate_liquidated_tweet.png)
+![bg right width:600](./assets/aave-liquidations.png)
 
-<!-- footer: '_Quelle: [Chainlink](https://chain.link/use-cases/defi)_' -->
+<!-- footer: '_Source: [Block Analitica](https://aave.blockanalitica.com) (Mai 2024)_' -->
 
 ---
 
-# Liquidations-Modelle
+# Liquidation models
 
 ![center width:900](./assets/defi-liquidation-models.png)
 
-<!-- footer: '_Quelle: [Delphi Digital](https://members.delphidigital.io/reports/breaking-down-the-design-space-of-money-market-liquidations)_' -->
+<!-- footer: '_Source: [Delphi Digital](https://members.delphidigital.io/reports/breaking-down-the-design-space-of-money-market-liquidations)_' -->
 
 ---
 
-# Liquidationen auf Aave
+# Liquidators
 
-![center width:650](./assets/aave-liquidations.png)
+- Public (everyone can be a liquidator)
+- Liquidators make profit
+- Highly competitive market dominated by MEV-bots
+- Capital-neutral liquidations use flash-loans
 
-<!-- footer: '_Quelle: [Block Analitica](https://aave.blockanalitica.com) (Mai 2024)_' -->
+![bg right 100%](./assets/defi-liquidators.png)
+
+<!-- footer: '_Source: [Qin et al](https://dl.acm.org/doi/10.1145/3487552.3487811)_' -->
 
 ---
 
 # Flash Loans
 
-![center width:1200](./assets/flash-loans.png)
+- Borrow any amount without collateral
+- __BUT:__ repay in same tx
+- __IF NOT:__ entire tx reverts
+- Zero counterparty risk
+- Used for liquidations, arbitrage, leverage, position management (eg collateral swap, UX)
 
-<!-- footer: '_Quelle: [LearnWeb3](https://learnweb3.io/lessons/borrow-millions-without-collateral-from-aave-using-flash-loans/)_' -->
+![bg right width:700](./assets/flash-loans.png)
+
+<!-- footer: '_Source: [LearnWeb3](https://learnweb3.io/lessons/borrow-millions-without-collateral-from-aave-using-flash-loans/)_' -->
 
 ---
 
-# Anwendungen von Flash Loans
+# Interest rates
 
-- Arbitrage
-- Liquidation
-- Leverage
-- Position Management (e.g. Collateral Swap)
-- UX
+- What is the cost of borrowing?
+- Mostly variable based on market's utilization
+- Mostly involves active DAO/Operator decisions
+- __State-of-the-art:__ adaptive model with autonomous _Curve Controller_
+
+![bg right width:700](./assets/vesu-adaptive-interest-rates.png)
+
+<!-- footer: '_Source: [www.docs.vesu.xyz](https://docs.vesu.xyz/blog/2024-04-03-vesu-lending-hooks)_' -->
+
+---
+
+# Vesu Lending Markets
+
+![center width:900](./assets/vesu-markets.png)
+
+<!-- footer: '_Source: [www.vesu.xyz](https://vesu.xyz)_' -->
+
+---
+
+# TradFi vs DeFi
+
+![center width:800](./assets/tradfi-vs-defi-lending.png)
+<!-- footer: '_Source: [Appinventiv](https://appinventiv.com/blog/how-defi-lending-works/)_' -->
+
+---
+
+<style scoped>section{font-size:32px;}</style>
+
+# Lending recap
+
+|               |  Bank                | DeFi                | DeFi Flash Loan   |
+| ------------- | -------------------- | ------------------- | ----------------- |
+| Counterparty  | Bank                 | Smart Contract      | Smart Contract    |
+| Collateral    | <100%                | >100%               | No                |
+| KYC           | Yes                  | No                  | No                |
+| Interest      | Fix/variable         | Fix/variable        | Fix fee           |
+| Maturity      | Fixed                | Open                | 1 Block           |
+| Liquidation   | Through courts       | On-chain            | No need           |
+| Access        | Local (Jurisd.)      | Global              | Global            |
+| Service hrs   | Business hrs/days    | 24/7/365            | 24/7/365          |
 
 <!-- footer: "" -->
 
 ---
 
-# Top Lending Platformen
+<style scoped>section{font-size:44px;}</style>
 
-![center width:1100](./assets/lending-tvl-rankings.png)
+# Thank you!
 
-<!-- footer: '_Quelle: [Defillama](https://defillama.com) (Mai 2024)_' -->
+<br>
+
+
+![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white) [@nilsbundi](https://twitter.com/nilsbundi)  
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) [Nils Bundi](https://ch.linkedin.com/in/nils-bundi-6246b998)  
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) [@nbundi](https://github.com/nbundi)  
+
+
+![bg 80% right](./assets/defi-is-here-meme.png)
