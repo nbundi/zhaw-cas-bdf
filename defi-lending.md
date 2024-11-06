@@ -1,7 +1,7 @@
 ---
 marp: true
 lang: en-EN
-title: DeFi Lending Primer
+title: DeFi Lending Intro
 description: Introduction to DeFi Lending
 theme: minimal
 transition: fade
@@ -16,8 +16,7 @@ footer: ""
 
 # <!--fit--> DeFi Lending - An Introduction
 
-## DeFi Talents Guest Lecture
-### 4. November 2024
+## Continuing Education Course
 ### Dr. Nils Bundi
 
 
@@ -40,14 +39,21 @@ footer: ""
 
 ---
 
+# We HODL
+
+![center width:700](./assets/yoda-hodl-meme.jpg)
+
+---
+
 # What if?
 
-- I could earn on my crypto
-- I could borrow crypto
+- I could earn while HODLing
+- I could borrow more crypto
 - Directly from my wallet
-- Only requiring an internet connection
+- Through the internet
 - __Anonymously__
 - __Globally__
+- __24/7/365__
 
 ![bg right 60%](./assets/defi-lending-2.png)
 
@@ -69,7 +75,7 @@ footer: ""
 
 ---
 
-# But, how?
+# How it works
 
 ![center width:950](./assets/defi-lending-how.png)
 
@@ -103,6 +109,14 @@ __Liquidate__ position if HF<1!
 
 ---
 
+# Liquidation models
+
+![center width:900](./assets/defi-liquidation-models.png)
+
+<!-- footer: '_Quelle: [Delphi Digital](https://members.delphidigital.io/reports/breaking-down-the-design-space-of-money-market-liquidations)_' -->
+
+---
+
 # In practice
 
 ![width:550](./assets/arkham-liquidation-tweet.png)
@@ -110,14 +124,6 @@ __Liquidate__ position if HF<1!
 ![bg right width:600](./assets/aave-liquidations.png)
 
 <!-- footer: '_Source: [Block Analitica](https://aave.blockanalitica.com) (Mai 2024)_' -->
-
----
-
-# Liquidation models
-
-![center width:900](./assets/defi-liquidation-models.png)
-
-<!-- footer: '_Source: [Delphi Digital](https://members.delphidigital.io/reports/breaking-down-the-design-space-of-money-market-liquidations)_' -->
 
 ---
 
@@ -148,12 +154,23 @@ __Liquidate__ position if HF<1!
 
 ---
 
+# Price Oracles
+
+- What is the value of a position's collateral and debt?
+- Price oracles make (off-chain) data available in lending protocols
+
+![center width:1000](./assets/chainlink-oracles.png)
+
+<!-- footer: '_Quelle: [Chainlink](https://chain.link/use-cases/defi)_' -->
+
+---
+
 # Interest rates
 
 - What is the cost of borrowing?
 - Mostly variable based on market's utilization
-- Mostly involves active DAO/Operator decisions
-- __State-of-the-art:__ adaptive model with autonomous _Curve Controller_
+- Utilization = $\frac{\text{"total debt"}}{\text{"total supplied"}}$
+- __State-of-the-art:__ fully autonomous with _Curve Controller_
 
 ![bg right width:700](./assets/vesu-adaptive-interest-rates.png)
 
@@ -173,6 +190,18 @@ __Liquidate__ position if HF<1!
 
 ![center width:800](./assets/tradfi-vs-defi-lending.png)
 <!-- footer: '_Source: [Appinventiv](https://appinventiv.com/blog/how-defi-lending-works/)_' -->
+
+---
+
+# Use cases
+
+- Liquid "HODLing"
+- Leverage
+- Carry-trade
+- Shorting
+- "Looping"
+- Financing of arbitrage and MEV strategies
+- etc.
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 marp: true
-lang: de-DE
-title: DeFi Kurs - Einführung in DeFi
-description: Einführung in Decentralized Finance (DeFi)
+lang: en-EN
+title: DeFi Assets Intro
+description: Introduction to Cryptoassets, Stablecoins, Tokenization
 theme: minimal
 transition: fade
 paginate: true
@@ -14,10 +14,9 @@ footer: ""
 
 ![bg opacity](./assets/gradient.jpg)
 
-# <!--fit--> Kryptoassets und Wallets
+# <!--fit--> Cryptoassets, Stablecoins, Tokenization
 
-## Weiterbildungskurs DeFi
-
+## Continuing Education Course
 ### Dr. Nils Bundi
 
 
@@ -25,19 +24,38 @@ footer: ""
 
 ---
 
-# Kryptoassets auf dem Vormarsch
+<style scoped>{font-size: 36px}</style>
 
-![left width:600](./assets/FT-blackrock-buidl.png)
-![center width:700](./assets/FAZ-tokenisierung-immobilien.png)
+![bg right 60%](./assets/nils-profile.jpeg)
+
+### Dr. Nils Bundi
+
+<br>
+<br>
+
+![width:50](https://pbs.twimg.com/profile_images/1759540896167575552/uUA9O7Cm_400x400.png) Founder [Vesu Lending](https://vesu.xyz)
+![width:50](https://pbs.twimg.com/profile_images/1684551593360777216/Qi3r9wXZ_400x400.jpg) President [DeFi Collective](https://deficollective.org)
+![width:50](https://pbs.twimg.com/profile_images/1511627796937912322/U-1sR-eY_400x400.jpg) Lecturer [ZHAW School of Engineering](https://zhaw.ch)
 
 ---
 
-# Was sind Kryptoassets?
+# Cryptoassets make headlines
 
-> [...] digitale Vermögenswerte, die meist auf einer Blockchain abgebildet werden. Sie unterscheiden sich von anderen Vermögenswerten, da nur mithilfe eines kryptobasierten Zugangsverfahrens über sie verfügt werden kann. In der Regel wird dafür ein Schlüsselpaar verwendet, bestehend aus einem
-geheim zu haltenden privaten (Private Key) und einem öffentlichen Schlüssel (Public Key).
+![left width:500](./assets/FT-blackrock-buidl.png)
+![center width:500](./assets/FAZ-tokenisierung-immobilien.png)
+![bg right width:600](./assets/cl-ubs-swift_tokenized-assets-settlement_news.png)
 
-<!-- footer: '_Quelle: [FINMA](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/faktenblaetter/faktenblatt-kryptobasierte-vermoegenswerte.pdf?sc_lang=de&hash=C301BDEC9A7DED4EF2E23634B86F8FEF)' -->
+---
+
+# FINMA on cryptoassets
+
+> Cryptoassets are digital assets that are usually
+recorded on a blockchain. They differ from other
+assets because they can only be accessed using
+cryptography. As a rule, a pair of keys is used,
+consisting of a secret private key and a public key
+
+<!-- footer: '_Quelle: [FINMA](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/faktenblaetter/faktenblatt-kryptobasierte-vermoegenswerte.pdf?sc_lang=en&hash=C301BDEC9A7DED4EF2E23634B86F8FEF)' -->
 
 ---
 
@@ -69,76 +87,62 @@ td {
 }
 </style>
 
-# Kryptoassets Markt
+# Cryptoassets market
 
 <br>
 
-| __9'972__ Tokens*     | __$2.5t__ MCAP       |
+| __10k__ Tokens     | __$2.3t__ MCAP       |
 | --------------------- | ------------------- |
-| __$70b__ Volume (24h) | __500m__ Token Holders |
+| __$91b__ Volume (24h) | __813m__ Token Holders |
 
 
-_*Nur "aktive" Tokens nach CoinMarketCap_ 
+_Covers "active" tokens according to CoinMarketCap/Token Terminal._ 
 
-<!-- footer: '_Quelle: [CoinMarketCap](https://coinmarketcap.com), [Token Terminal](https://tokenterminal.com/terminal/metrics/tokenholders)  (Mai 2024)_' -->
+<!-- footer: '_Source: [CoinMarketCap](https://coinmarketcap.com), [Token Terminal](https://tokenterminal.com/terminal/metrics/tokenholders)_' -->
 
 
 ---
 
-# Marktkapitalisierung
+# Market capitalization
 
-![center width:900](./assets/coin-market-cap-history.jpeg)
+![center width:900](./assets/crypto-mcap.png)
 
-<!-- footer: '_Quelle: [CoinMarketCap](https://coinmarketcap.com)_' -->
-
----
-
-# Marktstruktur (nach MCAP)
-
-![center width:800](./assets/crypto-markets-dominance.png)
-
-<!-- footer: '_Quelle: [CoinMarketCap](https://coinmarketcap.com/crypto-heatmap/) (Mai 2024)_' -->
+<!-- footer: '_Source: [CoinMarketCap](https://coinmarketcap.com)_' -->
 
 ---
 
-# DeFi Stack
+# Capitalization by asset
 
-- Kryptoassets bilden die Basis für DeFi
-- Innovation durch offene Schnittstellen
-- Globaler Vertrieb mittels öffentlicher Blockchain
-- Verschiedene Umsetzungen
+![center width:800](./assets/crypto-asset-heatmap.png)
 
-![bg right 100%](./assets/defi-stack.png)
-
-<!-- footer: '_Quelle: [Deloite](https://www2.deloitte.com/content/dam/Deloitte/us/Documents/risk/us-financial-advisory-defi-march-2022.pdf) nach [Schär](https://doi.org/10.20955/r.103.153-74)_' -->
+<!-- footer: '_Source: [CoinMarketCap](https://coinmarketcap.com/crypto-heatmap/) (November 2024)_' -->
 
 ---
 
-# Technische Ausgestaltung
+# Token classification
 
-<br>
+![center width:800](./assets/cryptoassets-taxonomy-bis.png)
 
-| | __Native Coin__     | __Fungible Token__     | __Non-Fungible Token__ |
+<!-- footer: '_Source: [BIS Working Paper](https://www.bis.org/publ/work1066.pdf)_' -->
+
+---
+
+<style scoped>{font-size: 30px}</style>
+
+# Token implementation
+
+|     | __Native Token__      | __Fungible Token__     | __Non-Fungible Token__ |
 | --- | --------------------- | ------------------- | -------------------|
-| Implemen-tation | Blockchain Protokol | Smart Contract | Smart Contract | 
-| Standards | -  | ERC-20 | ERC-721 |
-| Beispiele | Bitcoin, Ether, Solana | USDC, Link, Shiba Inu | BAYC, Uniswap LPs, Axies
+| Implement-ation | Embedded in blockchain | Smart Contract | Smart Contract | 
+| Standards      | -  | ERC-20 | ERC-721 |
+| Functionality  | Transfer, pay tx fees, staking | Programmable with all sorts of functionality | Programmable with all sorts of functionality |
+| Examples       | BTC, ETH     | USDC, vUSDC, UNI, vault shares, LPs | CryptoPunks, BAYC, Beeple's "Everydays", Uniswap-v3 LPs |
 
 <!-- footer: "" -->
 
 ---
 
-# Beispiel ERC-20 Token Standard
-
-- Vorgestellt am 19.11.2015
-- Definiert Schnittstellen für (fungible) Token Smart Contracts
-- Implementation als Smart Contract auf einer Blockchain
-- Standardisierung als Katalysator für Innovation: ermöglicht die offene, effiziente und sichere Entwicklung von DeFi Apps
-- Definition: https://eips.ethereum.org/EIPS/eip-20
-
----
-
-# ERC-20 Token (unvollständing)
+# Example: ERC-20 Token (incomplete)
 
 ```typescript
 contract ERC20 {
@@ -160,48 +164,24 @@ contract ERC20 {
 
 ---
 
-# Global Crypto Taxonomy
-
-![center width:1100](./assets/global-crypto-taxonomy.png)
-
-<!-- footer: '_Quelle: [Bitcoin Suisse](https://www.bitcoinsuisse.com/crypto-taxonomy)_' -->
-
----
-
-# Cryptocurrency
-
-- Kryptoassets mit Geld-ähnlichen Eingenschaften
-- Kein weiterer Nutzen als "medium of exchange", "store of value", "unit of account"
-- Kann "privacy preserving" Charakteristika aufweisen (bspw. Verschleierung von "owner accounts")
-- Meist in Form von "native coins"
-- Bspw. Bitcoin, Ripple, Litecoin, etc.
-
-<!-- footer: "" -->
-
----
-
-# Decentralized Finance
-
-- Kryptoassets, die von einem DeFi Projekt ausgegeben werden
-- Haben oft einen impliziten Nutzen e.g. als Stimmrecht (Governance Token) oder Staking (Fee Capture Token)
-- Werden oft an Nutzer verteilt (Airdrops) mit dem Ziel
-    - Nutzer-Acquirierung (Bootstrapping)
-    - Dezentralisierung von Governance (DAOs)
-- Meist in Form von "fungible tokens" oder ERC-20s
-- Bspw. Uniswap, Link, Aave, Maker, Liquity, etc.
-
----
-
 # Stablecoins
 
-- Sollen dem Preis eines Referenzassets folgen, e.g.
+- Tokens that are pegged to the price of another asset
     - Circle's EURC $\approx$ 1 EUR
     - Liquity's LUSD $\approx$ 1 USD
     - Synthetix' sETH $\approx$ 1 ETH
-- Verschiedene "Peg"-Mechanismen
-    - Centralized, 100% Fiat/Treasuries backed
-    - Decentralized, 100% Kryptoasset backed
-    - Algorithmisch oder "Fractional Reserve" (<100% Backing)
+- Different Peg-Mechanisms
+    - 100% backed by Fiat/Treasuries (CeFi)
+    - \>100% backed by cryptoassets (DeFi)
+    - Algorithmic or only partially backed (DeFi)
+
+---
+
+# Stablecoin landscape
+
+![center width:1100](./assets/stablecoin-models.png)
+
+<!-- footer: '_Source: [CoinGecko State-of-Stablecoins 2024](https://assets.coingecko.com/reports/2024/CoinGecko-State-of-Stablecoins-2024.pdf)_' -->
 
 ---
 
@@ -209,102 +189,109 @@ contract ERC20 {
 
 ![center width:1000](https://cepr.org/sites/default/files/styles/flexible_wysiwyg/public/image/FromMay2014/ganesh13mayfig1.png?itok=i6kVoVMH "Stablecoin Trilemma according to Viswanath-Natraj and Chaudhary")
 
-<!-- footer: '_Quelle: [Viswanath-Natraj and Amit Chaudhary](https://cepr.org/voxeu/columns/algorithmic-stablecoins-and-devaluation-risk)_' -->
+<!-- footer: '_Source: [Viswanath-Natraj and Amit Chaudhary](https://cepr.org/voxeu/columns/algorithmic-stablecoins-and-devaluation-risk)_' -->
 
 ---
 
-# Beispiel USDC
+# Example: USDC
 
-- USD Stablecoin ausgegeben von Circle 
-- 100% backing durch Cash und "Equivalents"
-- \$33b MCAP ($\approx$ 1.3%)
-- Sehr stabil und liquide
+- USD Stablecoin issued by Circle 
+- 100% backing through "Cash and Cash Equivalents"
+- \$36b MCAP
+- Widely used across DeFi, often used as a proxy for USD
 
 ![bg 80% right](./assets/usdc-chart.png)
 
-<!-- footer: '_Quelle: [CoinMarketCap](https://coinmarketcap.com/currencies/usd-coin/)_' -->
+<!-- footer: '_Source: [CoinMarketCap](https://coinmarketcap.com/currencies/usd-coin/)_' -->
 
 ---
 
-# Beispiel USDC Depeg
+# Example: Depeg
 
-- Depeg im März 2023 
-- Ausgelöst durch Kollaps von Silicon Valley Bank
-- SVB verwahrt ca. $3.3b USD für Circle
-- "Bank run" als Reaktion
-- Stablecoin [Rating](https://bluechip.org)
+- USDC is NOT USD
+- Depeg in March 2023 
+- Triggered by collapse of Silicon Valley Bank
+- SVB custodies some $3.3b USD for Circle
+- "Bank run" as a reaction
+- __Understand risks!__
 
 ![bg 90% left](./assets/usdc-chart-depeg.png)
 
-<!-- footer: '_Quelle: [CoinMarketCap](https://coinmarketcap.com/currencies/usd-coin/)_' -->
+<!-- footer: '_Source: [CoinMarketCap](https://coinmarketcap.com/currencies/usd-coin/)_' -->
 
 ---
 
-# Real-World Assets (RWAs)
+# Top 8 stablecoins
 
-- Tokenisierung von "regulären" Assets
-- Besteht normalerweise aus
-    - Rechtsstruktur: SPV o.ä. hält ("real-world") Assets
-    - Primärmarkt: Emission von Token mit Anspruch auf Assets
-    - Sekundärmarkt: Handel (bspw. mittels DEX) von Token
-- Ermöglicht die Tokenisierung jegwelcher Assets
-- Bspw. Paxos Gold, Private Debt, Tokenisierte "Treasuries"
+![center width:1100](./assets/stablecoins-top-8.png)
+
+<!-- footer: '_Source: [CoinGecko State-of-Stablecoins 2024](https://assets.coingecko.com/reports/2024/CoinGecko-State-of-Stablecoins-2024.pdf)_' -->
+
+---
+
+# Asset tokenization
+
+- Tokenization of "any" assets (similar to FIAT-backed stablecoins)
+- Generally involves
+    - Legal structure: SPV or similar owning the ("real-world") assets
+    - Primary market: Emission of token with claim on SPV assets
+    - Secondary market: Trading of token (e.g. through DEX)
+- Underlying assets are custodied by centralized custodian (CeFi)
+- Can often be freely traded and used across DeFi (DEX, lending, etc.)
+- Examples: Paxos Gold, Tokenized treasuries, real-estate, etc.
 
 <!-- footer: "" -->
 
 ---
 
-# Tokenisierte "Treasuries"
+# Tokenizing public securities
 
 ![center width:800](./assets/backed-tokenization.png)
 
-<!-- footer: '_Quelle: [Backed](https://assets.backed.fi/structure)_' -->
+<!-- footer: '_Source: [Backed](https://assets.backed.fi/structure)_' -->
 
 ---
 
-# Krypto Custody
+# Tokenized treasuries products
 
-- Blockchain Konten bestehen aus einem öffentlichen und privaten Schlüssen (Public / Private Key Pair)
-- Kryptoassets werden mittels solcher Konten verwahrt
-- Transaktionen werden mittels dem Private Key bestätigt
-- Custody von Kryptoassets beschäftigt sich mit der (sicheren) Aufbewahrung des Private Key's
-- __Achtung:__ Wiederherstellung des Private Key's, bspw. bei Verlust, ist nicht möglich!
+![center width:1200](./assets/steakhouse-tokenized-securities.png)
 
-<!-- footer: "" -->
+<!-- footer: '_Source: [Steakhouse Financial](https://dune.com/steakhouse/tokenized-securities)_' -->
 
 ---
 
-# Custodial vs. Non-Custodial Wallets
+# Tokenized treasuries market
 
-|                    | Custodial | Non-Custodial |
-| :----------------- | :-------- | :------------ |
-| Verantwortlichkeit | Drittpartei verwahrt den PK | Nutzer verwahrt den PK |
-| Sicherheit         | Abhängig vom Verwahrer | Abhängig vom Nutzer (und Wallet) |
-| Wiederherstellung  | Durch Verwahrer | Abhängig vom Wallet |
-| Kompatibilität | Meist nicht DeFi kompatibel | DeFi kompatibel |
+![center width:1200](./assets/steakhouse-tokenized-treasuries-market.png)
+
+<!-- footer: '_Source: [Steakhouse Financial](https://dune.com/steakhouse/tokenized-securities)_' -->
 
 ---
 
-![bg center 55%](./assets/not-your-keys-meme.png)
+# Tokens - DeFi's foundation
+
+- Cryptoassets build the foundation of any DeFi service (DEX, lending,etc)
+- Open and programmable interfaces enable DeFi protocols
+- Settlement on public blockchain
+
+![bg right 100%](./assets/defi-stack-bis.png)
+
+<!-- footer: '_Source: [BIS Working Paper](https://www.bis.org/publ/work1066.pdf)_' -->
 
 ---
 
-# FTX Exchange Kollaps
+<style scoped>section{font-size:44px;}</style>
 
-![center width:900](./assets/ftx-collapse.jpeg)
+# Thank you!
 
----
+<br>
 
-# Arten von Wallets
 
-![center width:900](./assets/bitpanda-wallets.png)
+![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white) [@nilsbundi](https://twitter.com/nilsbundi)  
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) [Nils Bundi](https://ch.linkedin.com/in/nils-bundi-6246b998)  
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) [@nbundi](https://github.com/nbundi)  
 
-<!-- footer: '_Quelle: [Bitpanda](https://www.bitpanda.com/academy/de/lektionen/was-ist-eine-wallet-und-wo-bekomme-ich-eine/)' -->
 
----
-
-# Beispiel [Argent](https://argent.xyz)
-
-![center width:800](./assets/argent-wallet.jpg)
+![bg 80% right](./assets/defi-is-here-meme.png)
 
 <!-- footer: "" -->
