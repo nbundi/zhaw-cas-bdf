@@ -86,7 +86,7 @@ td {
 
 | __3541__ Projekte    | __$204B__ TVL       |
 | -------------------- | ------------------- |
-| __$45B__ 7d-DEX Volume | __>$350m__ 7d-Fees |
+| __$45B__ 7d-DEX Volume | __>$350M__ 7d-Fees |
 
 
 <!-- footer: '_Quelle: [Defillama](https://defillama.com)  (March 2025)_' -->
@@ -117,14 +117,30 @@ td {
 
 ---
 
-# Uniswap
+# Leaders: Lend Aave
 
-- 2018 gegründet
-- Trading von Kryptoassets ($2.8b 24h Volume)
-- Keine Finanzintermediäre (wie Handel, Clearing, Settlement, Custody)
+- 2017 gegründet
+- Lending von Kryptoassets
+- Total deposits $29B, borrowed $10B
+- Fees 30d $30M 
+- Avg. stablecoin yield 6.5%
 - Global, offen, transparent
 - 365/7/24 in Betrieb
-- https://app.uniswap.org
+
+![bg 100% right](./assets/aave-screenshot.png)
+
+<!-- footer: '' -->
+
+--- 
+
+# Leaders: DEX Uniswap
+
+- 2018 gegründet
+- Trading von Kryptoassets
+- $2.8B 24h Volume
+- Fees 30d $69M
+- Global, offen, transparent
+- 365/7/24 in Betrieb
 
 ![bg 110% right](./assets/uniswap-app.png)
 
@@ -139,6 +155,21 @@ td {
 <!-- footer: '_Quelle: [Defillama](https://defillama.com)_' -->
 
 ---
+
+# Leaders: Liquid Staking Lido
+
+- 2020 gegründet
+- Liquid Staking of ETH
+- Total deposits $18B
+- Fees 30d $53M
+- Global, offen, transparent
+- 365/7/24 in Betrieb
+
+![bg 100% right](./assets/lido-screenshot.png)
+
+<!-- footer: '' -->
+
+--- 
 
 # FINMA zu DeFi
 
