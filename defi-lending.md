@@ -69,7 +69,7 @@ footer: ""
 
 # One of the largest DeFi sektors
 
-![center width:750pt](./assets/defi-ecosystem-map.png)
+![center width:750pt](./assets/defi-ecosystem-map-category.png)
 
 <!-- footer: '_Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map)_' -->
 

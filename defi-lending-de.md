@@ -20,7 +20,6 @@ footer: ""
 
 ### Dr. Nils Bundi
 
-
 <!-- This is presenter note. You can write down notes through HTML comment. -->
 
 ---
@@ -79,7 +78,7 @@ _Quelle: [Appinventiv](https://appinventiv.com/blog/how-defi-lending-works/)_
 
 # Zweitgrösster DeFi Sektor
 
-![center width:750pt](./assets/defi-ecosystem-map.png)
+![center width:750pt](./assets/defi-ecosystem-map-category.png)
 
 <!-- footer: '_Source: [Ultrasound Labs](https://ultrasound-labs.github.com/defi-ecosystem-map)_' -->
 
