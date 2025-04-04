@@ -43,10 +43,10 @@ DeFi Advisor/Gründer
 # Programm
 
 1. [Einführung](#einführung)
-2. [Besicherte Kredite](#besicherte-kredite)
+2. [DeFi Kredite](#besicherte-kredite)
 4. [Liquidationen](#liquidationen)
 3. [Preis Oracles](#preis-oracles)
-5. [Zinsmodelle](#zinsmodelle)
+4. [Governance](#governance)
 6. [Flash Loans](#flash-loans)
 7. [Alternative Modelle](#alternative-modelle)
 8. [Praktischer Teil](#praktischer-teil)
@@ -120,11 +120,27 @@ DeFi Advisor/Gründer
 
 ---
 
-# Transparenz
+# Transparenz: Ausstehende Coinbase-Morpho Kredite
 
-![center width:1000](./assets/aave-transparency.png)
+![center width:1000](./assets/morpho-coinbase-loans-outstanding.png)
 
-<!-- footer: '_Quelle: [Aave Docs](https://aave.com/docs/resources/parameters)_' -->
+<!-- footer: '_Quelle: [Dune](https://dune.com/rudexxx/cbbtc-usdc-morpho-blue-base)_' -->
+
+---
+
+# Transparenz: Coinbase-Morpho Marktrisiko
+
+![center width:700](./assets/coinbase-morpho-risiko-dashboard.png)
+
+<!-- footer: '_Quelle: [Dune](https://dune.com/morpho/coinbase-on-chain-loan-positions-liquidations-dashboard)_' -->
+
+---
+
+# Trend: Wallet oder Banking-App?
+
+![center width:800](./assets/argent-defi-integrated.png)
+
+<!-- footer: '_Quelle: [Argent](https://argent.xyz)_' -->
 
 ---
 
@@ -136,14 +152,6 @@ DeFi Advisor/Gründer
 - Finanzierung von Arbitrage und MEV Strategien
 - DeFi Strategien (bspw. "Airdrop Farming")
 - etc.
-
----
-
-# Trend: Wallet Integration
-
-![center width:800](./assets/argent-defi-integrated.png)
-
-<!-- footer: '_Quelle: [Argent](https://argent.xyz)_' -->
 
 ---
 
@@ -190,7 +198,7 @@ DeFi Advisor/Gründer
 
 ![bg opacity](./assets/gradient.jpg)
 
-# <!--fit--> Besicherte Kredite
+# <!--fit--> DeFi Kredite
 
 ---
 
@@ -275,6 +283,27 @@ Assets < Liabilities
 - __Frage:__ Regulation?
 
 ![bg right 100%](./assets/defi-lending-peer-to-pool.png)
+
+---
+
+# Zinsen
+
+- Was ist der Zins?
+- Normalerweise variabel, basierend auf der _Utilization_ für ein Asset
+- Utilization = $\frac{\text{"total debt"}}{\text{"total supplied"}}$
+- __State-of-the-art:__ Autonome Anpassung an Marktumfeld mittels  _Curve Controller_
+
+![bg right width:700](./assets/vesu-adaptive-interest-rates.png)
+
+<!-- footer: '_Source: [Vesu](https://docs.vesu.xyz/blog/2024-04-03-vesu-lending-hooks)_' -->
+
+---
+
+# Peer-to-pool vs Peer-to-peer
+
+![center width:900](./assets/ethlend-vs-aave.webp)
+
+<!-- footer: '_Quelle: [Wintermute](https://www.wintermute.com/insights/research/understanding-aave-governance-v2-the-decision-system-behind-defis-largest-lending-platform)_' -->
 
 ---
 
@@ -412,7 +441,7 @@ __Liquidate__ position if HF<=1!
 
 ---
 
-# Chainlink Data Providers
+# Chainlink Nodes
 
 ![center width:1000](./assets/chainlink-oracle-providers.png)
 
@@ -425,6 +454,12 @@ __Liquidate__ position if HF<=1!
 ![center width:1200](./assets/chainlink-price-feed-list.png)
 
 <!-- footer: '_Quelle: [Chainlink](https://chain.link/use-cases/defi)_' -->
+
+---
+
+# Andere Anbieter (Top 8)
+
+![center width:1000](./assets/defillama-top-10-oracles.png)
 
 ---
 
@@ -446,12 +481,6 @@ __Liquidate__ position if HF<=1!
 
 ---
 
-# Andere Anbieter (Top 8)
-
-![center width:1000](./assets/defillama-top-10-oracles.png)
-
----
-
 # Weitere Use Cases
 
 ![center width:1000](./assets/chainlink-oracle-use-cases.webp)
@@ -460,25 +489,92 @@ __Liquidate__ position if HF<=1!
 
 ---
 
+
 <!-- _class: lead -->
 
 ![bg opacity](./assets/gradient.jpg)
 
-# <!--fit--> Zinsmodelle
+# <!--fit--> Governance
 
 ---
 
-- What is the cost of borrowing?
-- Mostly variable based on market's utilization
-- Utilization = $\frac{\text{"total debt"}}{\text{"total supplied"}}$
-- __State-of-the-art:__ fully autonomous with _Curve Controller_
+# Flashback DINO
 
-![bg right width:700](./assets/vesu-adaptive-interest-rates.png)
+> The Protocol Operators act as a "management team" and implement decisions over the protocol's operations. Their level of control varies widely depending on how the protocol was implemented [...].
 
-<!-- footer: '_Source: [www.docs.vesu.xyz](https://docs.vesu.xyz/blog/2024-04-03-vesu-lending-hooks)_' -->
+![right bg 90%](./assets/dino-meme-riding-dino.png)
+
+<!-- footer: '_Quelle: [EEA Risk Assessment](https://entethalliance.org/specs/defi-risks/#sec-risks-governance)_' -->
 
 ---
 
+# Kontroverse
+
+![center width:1000](./assets/frambot-aave-is-a-bank.png)
+
+<!-- footer: '' -->
+
+---
+
+# Aave Governance
+
+- Aave protocol allows for updates/upgrades
+- Community proposes, votes on and implements updates
+- Makes Aave more flexible
+- Wer ist Gegenpartei?
+- Risiken?
+
+![bg right 100%](./assets/aave-governance-forum.png)
+
+<!-- footer: '_Quelle: [Aave](https://app.aave.com/governance)_' -->
+
+---
+
+# Morpho Governance
+
+- Keine Kontrolle im System (Smart Contracts sind Immutable)
+- Keine Gegenpartei (?)
+- Keine (Governance) Risiken (?)
+
+![bg right 100%](./assets/eyes-emoji.png)
+
+<!-- footer: '_Quelle: [Aave](https://app.aave.com/governance)_' -->
+
+---
+
+
+# Governance vs. No-Governance
+
+__Konzept:__ Smart Contracts bleiben _Immutable_, Risikomanagement wird an User oder Service Providers externalisiert. 
+
+![center width:1200](./assets/morpho-blue-concept.png)
+
+<!-- footer: '_Quelle: [Morpho](https://morpho.mirror.xyz/hfVXz323zp9CmJ1PLDL4UhdLITGQ865VIJUyvZYyMA4)_' -->
+
+---
+
+# Morpho Curators
+
+- Wer managed die Risiken für End-User?
+- Morpho: Spezialisierte Service Provider
+- Neues Geschäftsfeld
+- Regulation?
+- Wichtig: Offener Zugang!
+
+![bg right 100%](./assets/morpho-curators.png)
+
+
+<!-- footer: '' -->
+
+---
+
+# Morpho Curators Business Case
+
+![center width:800](./assets/morpho-curator-fees.png)
+
+<!-- footer: '_Quelle: [Dune](https://dune.com/morpho/vault-performance)_' -->
+
+---
 
 <!-- _class: lead -->
 
@@ -486,26 +582,77 @@ __Liquidate__ position if HF<=1!
 
 # <!--fit--> Flash Loans
 
+<!-- footer: '' -->
+
 ---
 
+<!-- This is the slide with custom styling -->
+<style scoped>
+  section {
+    text-align: center;
+    /*font-size: 4em; Adjust the font size as needed */
+  }
+</style>
+
+<br>
+
+## Imagine you could borrow an "infinite" amount without putting up collateral
+
+![bg right](./assets/magic-meme.jpg)
+
+<!-- footer: '' -->
+
+---
 
 # Flash Loans
 
-![center width:1200](./assets/flash-loans.png)
+- Leihe einen beliebigen Betrag
+- Keine Sicherheit hinterlegen
+- Mach damit was du willst
+- __Aber:__ bezahle den Kredit in derselben Tx zurück
+- __Oder:__ die gesamte TX wird rückgängig gemacht
 
-<!-- footer: '_Quelle: [LearnWeb3](https://learnweb3.io/lessons/borrow-millions-without-collateral-from-aave-using-flash-loans/)_' -->
+![bg right 100%](./assets/flashloan-diagram-simplified.png)
+
+<!-- footer: '_Quelle: [SmartBuilds](https://smartbuilds.io/defi-flashloans-explained-uniswap-foundry/)_' -->
 
 ---
 
 # Anwendungen von Flash Loans
 
-- Arbitrage
-- Liquidation
-- Leverage
-- Position Management (e.g. Collateral Swap)
-- UX
+- (Risk-free) Arbitrage
+- Kapital-neutrale Liquidationen
+- Bessere UX (bspw. Multiply, Leverage, Collateral Swap, etc.)
+- MEV (werden wir noch anschauen)
+- Attacks/Exploits (!)
+- Beispiele: [Flashbots](https://docs.flashbots.net/flashbots-mev-share/searchers/tutorials/flash-loan-arbitrage/introduction)
+
 
 <!-- footer: "" -->
+
+---
+
+# Arbitrage Bot
+
+![center width:1100](./assets/flashloan-arb-bot.jpg)
+
+<!-- footer: '_Quelle: [SoluLab](https://www.solulab.com/how-to-build-crypto-arbitrage-flash-loan-bot/)_' -->
+
+---
+
+# Collateral Swap
+
+![center width:800](./assets/flashloan-collateral-swap.webp)
+
+<!-- footer: '_Quelle: [Etherscan](https://info.etherscan.com/understanding-flash-loan/)_' -->
+
+---
+
+# Beispiel Transaktion
+
+![center width:900](./assets/flashloan-tx-etherscan.png)
+
+<!-- footer: '_Quelle: [Etherscan](https://etherscan.io/tx/0xb5c8bd9430b6cc87a0e2fe110ece6bf527fa4f170a4bc8cd032f768fc5219838)_' -->
 
 ---
 
@@ -515,38 +662,53 @@ __Liquidate__ position if HF<=1!
 
 # <!--fit--> Alternative Modelle
 
----
-
-- Oracle-less design
-- Uncollateralized
-- RWA backed
-- Permissioned (Aave Arc)
+<!-- footer: '' -->
 
 ---
 
+# Institutionen wollen Zugang
 
-# Lending Platform Modelle
+- Onchain Private Debt
+- DeFi Liquidity Pools
+- Traditionelles "Underwriting"
+- "Real-world Assets" als Sicherhiet
+- Globales "Capital Sourcing"
 
-|    |  Over-Collateralized  | Un-Collateralized  |
-| -- | --------------------- | ------------------ |
-| Anonym        | Ja   | Nein (Borrower) |
-| Kreditprüfung | Nein | Ja, durch _Pool Manager_ |
-| Besicherung   | >100% mittels Kryptoassets | Nein | 
-| Liquidation   | On-chain | Auf Gerichtsweg |
+![bg right 100%](./assets/bitwise-maple-defi.png)
 
-<!-- footer: "" -->
+<!-- footer: '_Quelle: [TheBlock](https://www.theblock.co/post/344836/bitwise-partners-maple-finance-institutional-clients-defi-credit)_' -->
 
 ---
 
-# Lending Platform Modelle (cont.)
+# RWA Lending
 
-|    |  Peer-to-peer  | Peer-to-pool  |
-| -- | --------------------- | ------------------ |
-| Gegenpartei | Borrower | Pool |
-| Liquidität   | Fragmentiert (nach individuellen Terms) | Pooled ( die gleichen terms für Teilnehmer) |
-| Besicherung | Ja / Nein | Ja / Nein |
-| Maturität | Fixed (pro Loan) | Variabel |
-| Zins | Fixed (pro Loan) | Variabel |
+![center width:600](./assets/maple-finance.png)
+
+<!-- footer: '_Quelle: [Maple](https://maple)_' -->
+
+---
+
+# Centrifuge
+
+![center width:1200](./assets/centrifuge-pool.png)
+
+<!-- footer: '_Quelle: [Centrifuge](https://app.centrifuge.io/#/pools)_' -->
+
+---
+
+# Top RWA Protokolle
+
+![center width:900](./assets/top-rwa-lending-protocols.png)
+
+<!-- footer: '_Quelle: [Cryptorank](https://cryptorank.io/insights/research/rwa-future-defi-primitive)_' -->
+
+---
+
+# RWA Borrowing Country Breakdown
+
+![center width:900](./assets/rwa-lending-country-breakdown.png)
+
+<!-- footer: '_Quelle: [Cryptorank](https://cryptorank.io/insights/research/rwa-future-defi-primitive)_' -->
 
 ---
 
@@ -556,4 +718,9 @@ __Liquidate__ position if HF<=1!
 
 # <!--fit--> Praktischer Teil
 
+
+<!-- footer: '' -->
+
 ---
+
+![center width:1000](./assets/lets-get-our-hands-dirty-meme.jpg)
