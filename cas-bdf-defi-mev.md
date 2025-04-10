@@ -44,9 +44,8 @@ DeFi Advisor/Gründer
 # Programm
 
 1. [MEV Einführung](#mev-einführung)
-2. [Lösung 1: Private TX Auktionen](#lösung-1-private-tx-auktionen)
-3. [Lösung 2: Änderung Protokoll](#lösung-2-änderung-protokoll)
-4. [Lösung 3: Mitigation in DeFi](#lösung-3-mitigation-in-defi)
+2. [MEV Auktionen](#mev-auktionen)
+3. [Mitigation in DeFi Apps](#mitigation-in-defi-apps)
 5. [Praktischer Teil](#praktischer-teil)
 
 ---
@@ -88,7 +87,7 @@ DeFi Advisor/Gründer
 <br>
 <br>
 
-### A story of greedy miners👷, smart hackers🦹🏼, cunning algorithmic traders🤖 and ... an active field of research in a $650M+ industry💰
+### A story of greedy miners👷, smart hackers🦹🏼, cunning algorithmic traders🤖 and ... an active field of research in a $1200M+ industry💰
 
 <!-- footer: '' -->
 
@@ -166,6 +165,8 @@ __Jeder__ kann Transaktionen einsehen und senden sowie am Konsensus Prozess teil
 
 <br>
 <br>
+
+## [etherscan.io](https://etherscan.io/txsPending)
 
 ## [txcity.io](https://txcity.io/v/eth-btc)
 
@@ -294,17 +295,31 @@ _Price Impact_ eines Trades auf Uniswap ist vorhersagbar!
 
 ![bg opacity](./assets/gradient.jpg)
 
-# <!--fit--> Lösung 1: Private TX Auktionen
+# <!--fit--> MEV Auktionen
+
+<!-- footer: '' -->
 
 ---
 
 # Ziele
 
-- Keine Priority Gas Auktionen mehr
-- Tiefere Gas Fees für user
-- Kein Netzwerk Congestion
-- Reduziere Zentralisierung
+- Keine Priority Gas Auktionen (PGA) mehr
+- Tiefere Gas Fees für Nutzer
+- Reduktion Netzwerk Congestion
+- Fix Zentralisierung
 
+![bg right 80%](./assets/solving-mev-meme.webp)
+
+---
+
+# Idee
+
+- Reguläre Transaktionen mittels Public Mempool
+- Offload MEV "Bundles" an spezialisierte Miner/Validators
+- MEV "bidding wars" finden im privaten Netzwerk statt
+- Reguläre Transaktionen sind nicht mehr (direkt) betroffen
+
+![bg right 80%](./assets/from-public-to-private-mev-auctions.png)
 
 ---
 
@@ -314,9 +329,17 @@ _Price Impact_ eines Trades auf Uniswap ist vorhersagbar!
 
 ---
 
+# Flashbots History
+
+![center width:800](./assets/flashbots-history.png)
+
+<!-- footer: '_Quelle: [Treehouse Labs](https://trhx.com/research/ethereums-hidden-tax-maximal-extractable-value-mev)_' -->
+
+---
+
 # Moderne MEV Supply Chain
 
-![center width:1000](./assets/mev-boost-pbs.webp)
+![center width:1200](./assets/flashbots-auction-architecture.png)
 
 <!-- footer: '_Quelle: [DelphiDigital](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum)_' -->
 
@@ -334,13 +357,6 @@ _Price Impact_ eines Trades auf Uniswap ist vorhersagbar!
 
 ---
 
-# Zentralisierung von Validatoren
-
-![center width:1000](./assets/mev-boost-validators.png)
-
-<!-- footer: '_Quelle: [mevboost.pics](https://mevboost.pics)_' -->
----
-
 ![center width:1200](./assets/mev-boost-daily-revenue.png)
 
 <!-- footer: '_Quelle: [mevboost.pics](https://mevboost.pics)_' -->
@@ -353,31 +369,167 @@ _Price Impact_ eines Trades auf Uniswap ist vorhersagbar!
 
 ---
 
-<!-- _class: lead -->
+# Problem gelöst?
 
-![bg opacity](./assets/gradient.jpg)
-
-# <!--fit--> Lösung 2: Änderung Protokoll
-
----
-
-# Todo
-
----
-
-<!-- _class: lead -->
-
-![bg opacity](./assets/gradient.jpg)
-
-# <!--fit--> Lösung 3: Mitigation in DeFi
+![center width:800](./assets/mev-boost-reintroduce-zentralization-meme.webp)
 
 <!-- footer: '' -->
 
 ---
 
-# Todo
+# Zentralisierung von Validatoren
 
+![center width:1000](./assets/mev-boost-validators.png)
 
+<!-- footer: '_Quelle: [mevboost.pics](https://mevboost.pics)_' -->
+
+---
+
+<!-- _class: lead -->
+
+![bg opacity](./assets/gradient.jpg)
+
+# <!--fit--> Mitigation in DeFi Apps
+
+<!-- footer: '' -->
+
+---
+
+<!-- This is the slide with custom styling -->
+<style scoped>
+  section {
+    text-align: center;
+    /*font-size: 4em; Adjust the font size as needed */
+  }
+</style>
+
+<br>
+<br>
+<br>
+<br>
+
+# DeFi Nutzer sind betroffen!
+
+![bg right 100%](./assets/cost-to-dex-traders-elitzer.png)
+
+---
+
+# Uniswap Trade Kosten
+
+![center width:1100](./assets/uniswap-trader-cost-breakdown.png)
+
+Empirische Kosten für Trades auf Uniswap nach Paar und Trade Size (Large: >$100,000; Medium: >$1,000; Small <$1,000).
+
+<!-- footer: '_Quelle: [Adams et al](https://link.springer.com/chapter/10.1007/978-3-031-78676-1_10s)_' -->
+
+---
+
+# MEV Volumen nach DeFi App
+
+![center width:1000](./assets/eigenphi-mev-volume-by-type.png)
+
+<!-- footer: '_Quelle: [Eigenphi](https://eigenphi.io/)_' -->
+
+---
+
+<!-- This is the slide with custom styling -->
+<style scoped>
+  section {
+    text-align: center;
+    /*font-size: 4em; Adjust the font size as needed */
+  }
+</style>
+
+<br>
+<br>
+<br>
+<br>
+
+## [MEV Livestream (Eigenphi)](https://eigenphi.io/mev/ethereum/txr)
+
+<!-- footer: '' -->
+
+---
+
+<!-- This is the slide with custom styling -->
+<style scoped>
+  section {
+    text-align: center;
+    /*font-size: 4em; Adjust the font size as needed */
+  }
+</style>
+
+<br>
+<br>
+<br>
+
+# Wie Schützen wir Nutzer?
+
+![bg right 100%](./assets/bank-mev-gone-meme.jpg)
+
+---
+
+# Strategien zum Schutz vor MEV
+
+| Strategie                | Beschreibung        | Beispiele |
+|------------------------- |-------------------- |--------- |
+| Slippage Toleranz        | Nutzer definiert maximal in Kauf genommener Verlust für Trade | Uniswap, DEXs |
+| MEV-less RPCs           | Privater "Mempool" welcher MEV blockiert. Ähnlich zu privaten MEV Auktionen | MEV Blocker |
+| Natives Protokoll-Design | Die Möglichkeit für MEV wird direkt im DeFi Protokoll berücksichtigt  | COWSwap |
+
+---
+
+# Beispiel Ekubo DEX
+
+- Nutzer definiert _Max slippage_ bzw. den maximal akzeptierten Trade Preis
+- Uniswap führt den Trade bloss unter Einhaltung dieser Kondition durch
+- MEV Verlust limitiert
+
+![bg right 100%](./assets/ekubo-max-slippage.png)
+
+<!-- footer: '_Quelle: [Uniswap](https://app.uniswap.org)_' -->
+
+---
+
+# Beispiel Uniswap
+
+<br>
+<br>
+
+Analog zu Ekubo DEX
+
+![bg right 100%](./assets/uniswap-max-slippage.png)
+
+<!-- footer: '_Quelle: [Uniswap](https://app.uniswap.org)_' -->
+
+---
+
+# Beispiel MEV Blocker
+
+- Einstellen direkt in Wallet
+- _MEV Blocker_ als neuen RPC Endpoint hinzufügen
+- Wallet sendet TXs dann an diesen Endpoint
+- TXs landen nicht mehr im Public Mempool
+
+![bg right 60%](./assets/rabby-change-rpc.png)
+
+<!-- footer: '_Quelle: [COWSwap](https://cow.fi/learn/understanding-mev-protection)_' -->
+
+---
+
+# Beispiel MEV Blocker (cont.)
+
+![center width:1050](./assets/mev-blocker-protections.png)
+
+<!-- footer: '_Quelle: [COWSwap](https://cow.fi/learn/understanding-mev-protection)_' -->
+
+---
+
+# Beispiel COWSwap
+
+![center width:1000](./assets/cowswap-mev-protection.webp)
+
+<!-- footer: '_Quelle: [COWSwap](https://cow.fi/learn/understanding-mev-protection)_' -->
 
 ---
 
@@ -386,11 +538,6 @@ _Price Impact_ eines Trades auf Uniswap ist vorhersagbar!
 ![bg opacity](./assets/gradient.jpg)
 
 # <!--fit--> Praktischer Teil
-
----
-
-# TODO
-
 
 ---
 
