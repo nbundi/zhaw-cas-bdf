@@ -76,18 +76,9 @@ DeFi Advisor/Gründer
 
 # Maximal Extractable Value (MEV)
 
-<!-- This is the slide with custom styling -->
-<style scoped>
-  section {
-    text-align: center;
-    /*font-size: 4em; Adjust the font size as needed */
-  }
-</style>
+Der maximale Profit, den Miner oder Validatoren durch die optimale Anordnung von Transaktionen in einem Block erwirtschaften können (include, exclude, order).
 
-<br>
-<br>
-
-### A story of greedy miners👷, smart hackers🦹🏼, cunning algorithmic traders🤖 and ... an active field of research in a $1200M+ industry💰
+![bg right 100%](./assets/grabbing-hands-meme.jpg)
 
 <!-- footer: '' -->
 
@@ -115,7 +106,7 @@ __Jeder__ kann Transaktionen einsehen und senden sowie am Konsensus Prozess teil
 
 ---
 
-# DeFi Recap
+# Settlement Layer für Finanztransakt.
 
 ![center width:800](./assets/defi-stack-reference-dsr-model.png)
 
@@ -149,7 +140,7 @@ __Jeder__ kann Transaktionen einsehen und senden sowie am Konsensus Prozess teil
 
 💡Keine zentrale (und regulierte) Gegenpartei, welche die Anordnung von Transaktionen bestimmt.
 
-<!-- footer: '_Quelle: [Zhang and ](https://medium.com/@liamzhang/mev-a-deep-dive-part-1-3f389ef16d32)_' -->
+<!-- footer: '_Quelle: [Zhang et al](https://medium.com/@liamzhang/mev-a-deep-dive-part-1-3f389ef16d32)_' -->
 
 ---
 
@@ -168,9 +159,9 @@ __Jeder__ kann Transaktionen einsehen und senden sowie am Konsensus Prozess teil
 
 ## [etherscan.io](https://etherscan.io/txsPending)
 
-## [txcity.io](https://txcity.io/v/eth-btc)
-
 ## [Mempool.space](https://mempool.space)
+
+## [txcity.io](https://txcity.io/v/eth-btc)
 
 <!-- footer: '' -->
 
@@ -232,7 +223,7 @@ _Price Impact_ eines Trades auf Uniswap ist vorhersagbar!
 
 ---
 
-# Seminal Paper
+# Frühe Forschung (2019)
 
 ![center width:1150](./assets/flash-boys-2-0.png)
 
@@ -283,7 +274,7 @@ _Price Impact_ eines Trades auf Uniswap ist vorhersagbar!
 
 ---
 
-# Lösungen für MEV
+# Impact von MEV
 
 ![center width:1000](./assets/approaches-to-solve-mev.png)
 
