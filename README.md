@@ -1,116 +1,65 @@
-# Marp CLI example
+# ZHAW CAS Blockchain & Decentralized Finance (BDF)
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/yhatt/marp-cli-example)
+Teaching materials for the **CAS Blockchain & Decentralized Finance (BDF)** at the
+[ZHAW School of Management and Law](https://www.zhaw.ch/en/sml/continuing-education/).
 
-**The good starter example for using [Marp] via [Marp CLI].**
+Slides are written as [Marp](https://marp.app/) Markdown and built with
+[Marp CLI](https://github.com/marp-team/marp-cli).
 
-- Write your slide deck by [Marp] Markdown.
-- Manage the content of slides via Git. (Using [GitPitch](https://github.com/gitpitch/gitpitch) style `PITCHME.md`)
-- Host your deck at GitHub, and publish as webpage with [GitHub Pages], [Netlify], and [Vercel].
-- Blazingly fast delivery out of the box. [Acquired all 100% Lighthouse scores!](#lighthouse)
+Lecturer: **Dr. Nils Bundi** — Founder [Vesu Lending](https://vesu.xyz), President
+[DeFi Collective](https://deficollective.org), Lecturer
+[ZHAW School of Engineering](https://zhaw.ch).
 
-[marp]: https://marp.app/
-[marp cli]: https://github.com/marp-team/marp-cli
-[github pages]: https://pages.github.com/
-[netlify]: https://www.netlify.com/
-[vercel]: https://vercel.com/
+## Course editions
 
-<p align="center">
-  <a href="https://yhatt.github.io/marp-cli-example"><img src="https://yhatt.github.io/marp-cli-example/og-image.jpg" width="500" /></a>
-</p>
+| Edition | Folder | Period | Status |
+| :------ | :----- | :----- | :----- |
+| FS 2025 | [`fs25/`](./fs25) | Feb – May 2025 | Completed — slide decks archived |
+| HS 2026 | [`hs26/`](./hs26) | Sep – Dec 2026 | Upcoming — schedule only, materials TBD |
 
-## See published slide deck
+Each edition folder is self-contained: it holds its own slide decks plus the
+`assets/` and `themes/` they reference.
 
-- <img src="https://icongr.am/octicons/mark-github.svg" width="24" height="24" valign="bottom" /> **[GitHub Pages]**: https://yhatt.github.io/marp-cli-example
-- <img src="https://icongr.am/simple/netlify.svg?colored" width="24" height="24" valign="bottom" /> **[Netlify]**: https://yhatt-marp-cli-example.netlify.app/
-- <img src="https://icongr.am/simple/zeit.svg" width="24" height="24" valign="bottom" /> **[Vercel]**: https://marp-cli-example.yhatt.vercel.app/
+## Repository layout
 
-### Lighthouse
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/3993388/115988866-7cd7fe00-a5f6-11eb-9e51-7a62da998eca.png" width="615" alt="Acquired all 100% Lighthouse scores" />
-</p>
-
-## Usage
-
-It's surprisingly easy to start publishing your slide deck!
-
-### <img src="https://icongr.am/octicons/mark-github.svg" width="24" height="24" valign="bottom" /> [GitHub Pages]
-
-Create a new _public_ repository based on this repository, from **"Use this template"** button!
-
-[![](https://img.shields.io/badge/-Use%20this%20template-brightgreen?style=for-the-badge&logo=github)](https://github.com/yhatt/marp-cli-example/generate)
-
-We already have [GitHub Actions workflow](.github/workflows/github-pages.yml) to build and deploy automatically when merged to master branch. It's also available to deploy from any branch manually.
-
-To get started, turn on GitHub Pages in repository's "**Settings** tab → **Pages**" [by setting source as "GitHub Actions"](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
-
-### <img src="https://icongr.am/simple/netlify.svg?colored" width="24" height="24" valign="bottom" /> [Netlify]
-
-Push **"Deploy to netlify"** button. [Netlify] will create your repository based on this example and host website from `master` branch automatically.
-
-[![Deploy to Netlify](./assets/netlify-deploy-button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yhatt/marp-cli-example)
-
-### <img src="https://icongr.am/simple/zeit.svg" width="24" height="24" valign="bottom" /> [Vercel]
-
-Push **"Deploy"** button. [Vercel] can choose to create your repository based on this example.
-
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/yhatt/marp-cli-example)
-
-> :information_source: To enable the auto-generated open graph image in Vercel, you have to turn on ["Automatically expose System Environment Variables"](https://vercel.com/docs/concepts/projects/environment-variables#system-environment-variables) in your Vercel project dashboard.
-
-## How to write
-
-For Marp slide deck features, please see the documentation of [Marpit Markdown](https://marpit.marp.app/markdown), [the features of Marp Core](https://github.com/marp-team/marp-core#features), and the default example in [`PITCHME.md`](https://raw.githubusercontent.com/yhatt/marp-cli-example/master/PITCHME.md) for .
-
-You have to install [Node.js](https://nodejs.org/) and run `npm i` at first if you want to write slide deck with [Marp CLI].
-
-### Edit deck
-
-Just edit **[`PITCHME.md`](./PITCHME.md)**!
-
-#### Preview deck
-
-**[Marp for VS Code]** extension is the best partner for writing Marp slide deck with live preview.
-
-<p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode">
-    <img src="https://raw.githubusercontent.com/marp-team/marp-vscode/master/docs/screenshot.png" width="500" />
-  </a>
-</p>
-
-**You can try edit and preview on the web now!** Open https://github.dev/yhatt/marp-cli-example/blob/master/PITCHME.md or hit <kbd>.</kbd> key on this repository, and install [Marp for VS Code] extension.
-
-[marp for vs code]: https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
-
-#### Preview via CLI
-
-```bash
-npm run start
+```
+.
+├── fs25/              FS 2025 edition
+│   ├── assets/        images, PDFs
+│   ├── themes/        custom Marp theme (theme.scss)
+│   ├── index.md       deck index / landing deck
+│   └── *.md           individual slide decks
+├── hs26/              HS 2026 edition
+│   ├── assets/        official schedule PDF
+│   └── README.md      schedule and planning
+├── marp.config.mjs    Marp CLI configuration
+├── package.json       build scripts
+└── netlify.toml       Netlify deployment
 ```
 
-It will be opened preview window via installed Google Chrome, and track change of `PITCHME.md`.
+## Building the slides
 
-### Assets and themes
-
-- `assets` directory can put your assets for using in the deck. (e.g. Image resources)
-- `themes` directory can put [custom theme CSS](https://marpit.marp.app/theme-css). To use in the deck, please change `theme` global directive.
-
-### Build deck via CLI
+Requires [Node.js](https://nodejs.org/) (version pinned in `.nvmrc`).
 
 ```bash
-npm run build
+npm ci        # install dependencies
+npm start     # live preview in Chrome
+npm run build # build static site to public/
 ```
 
-The built assets will output to `public` folder.
+The published build currently targets `fs25/index.md`; adjust the `deck` and
+`og-image` scripts in `package.json` to publish a different edition.
 
-#### Build per assets
+Writing slides is easiest with the
+[Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
+extension — the custom theme is already wired up in `.vscode/settings.json`.
 
-```bash
-npm run deck      # Output static HTML to public/index.html
-npm run og-image  # Output image for Open Graph to public/og-image.jpg
-```
+## Deployment
 
-## LICENSE
+A [GitHub Actions workflow](.github/workflows/github-pages.yml) builds and deploys
+to GitHub Pages on every push to `master`. `netlify.toml` provides the equivalent
+Netlify build command.
 
-[WTFPL](/LICENSE)
+## License
+
+[WTFPL](./LICENSE)

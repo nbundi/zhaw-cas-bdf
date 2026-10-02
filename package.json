@@ -1,16 +1,16 @@
 {
-  "name": "defi-kurs",
+  "name": "zhaw-cas-bdf",
   "version": "1.0.0",
   "author": "Nils Bundi <nils.bundi@gmail.com>",
   "license": "WTFPL",
   "private": true,
   "scripts": {
     "build": "rimraf public && npm run -s og-image && npm run -s deck",
-    "deck": "marp --no-stdin index.md -o public/index.html && ncp assets public/assets",
-    "og-image": "marp --no-stdin index.md -o public/og-image.jpg",
+    "deck": "marp --no-stdin fs25/index.md -o public/index.html && ncp fs25/assets public/assets",
+    "og-image": "marp --no-stdin fs25/index.md -o public/og-image.jpg",
     "start": "marp -ps .",
     "vercel-build": "yum install nss mesa-libgbm -y && MARP_USER=root CHROME_PATH=$(npx -y @puppeteer/browsers@latest install chrome@stable --path $(realpath ./tmp) | awk '{print $2}') npm run build",
-    "deck-einf": "marp --no-stdin defi-einfuehrung.md -o public/index.html && ncp assets public/assets"
+    "deck-einf": "marp --no-stdin fs25/defi-einfuehrung.md -o public/index.html && ncp fs25/assets public/assets"
     
   },
   "devDependencies": {

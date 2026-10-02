@@ -18,7 +18,7 @@ footer: 'DeFi Wissen'
 
 Weiterbildungskurs - Teil 6
 
-https://github.com/nbundi/defi-kurs
+https://github.com/nbundi/zhaw-cas-bdf
 
 
 <!-- This is presenter note. You can write down notes through HTML comment. -->

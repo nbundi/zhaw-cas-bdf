@@ -2,6 +2,6 @@
 // https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
 {
   "markdown.marp.themes": [
-    "./themes/theme.scss"
+    "./fs25/themes/theme.scss"
   ]
 }

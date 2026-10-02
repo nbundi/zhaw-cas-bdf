@@ -10,7 +10,7 @@ const config = {
   
     return undefined
   })(),
-  themeSet: 'themes',
+  themeSet: 'fs25/themes',
   url: canonicalUrl,
 }
 
